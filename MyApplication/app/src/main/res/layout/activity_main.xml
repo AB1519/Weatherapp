@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_dark"
+    tools:context="com.example.bangadi.myapplication.MainActivity">
+
+    <EditText
+        android:id="@+id/txvCity"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/desc1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginStart="29dp"
+        android:ems="10"
+        android:hint="CITY"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/txvCity"
+        android:layout_toEndOf="@+id/txvCity"
+        android:layout_toRightOf="@+id/txvCity"
+        android:text="search" />
+
+    <TextView
+        android:id="@+id/desc1"
+        android:layout_width="250dp"
+        android:layout_height="350dp"
+        android:layout_alignLeft="@+id/txvCity"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/txvCity"
+        android:textColor="@android:color/background_dark"
+        android:textSize="24sp" />
+
+    <ImageView
+        android:id="@+id/weatherImageView"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_alignEnd="@+id/b1"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/b1"
+        android:layout_marginBottom="62dp"
+        app:srcCompat="@android:color/holo_blue_dark" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_alignLeft="@+id/txvCity"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/txvCity"
+        android:layout_marginTop="14dp"
+        android:text="Enter the city name to know the weather condition"
+        android:textColor="@android:color/black"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>
